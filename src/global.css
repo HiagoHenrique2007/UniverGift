@@ -1,11 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, 'roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #070011;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,11 +19,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 2rem;
-
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -35,4 +30,108 @@ body {
   button {
     background-color: #f9f9f9;
   }
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 2rem;
+
+}
+
+h1, h2, h3, p, blockquote {
+  letter-spacing: 4%;
+  font-size: 0.6rem;
+  margin-top: 1rem;
+}
+
+
+.price {
+  letter-spacing: 20%;
+}
+
+.text-lg {
+  font-size: 1rem;
+}
+
+.text-md {
+  font-size: 0.6rem;
+}
+
+.no-bold {
+  font-weight: 400;
+}
+
+.text-broken {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 140%;
+}
+
+.text-enfase {
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.text-enfase::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: -6%;
+  bottom: 0;
+  width: 110%;
+  height: 84%;
+  background-color: #091863;
+  
+}
+
+.text-enfase::before {
+  content: '';
+  z-index: -2;
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  width: 115%;
+  height: 84%;
+  background-color:rgb(9, 32, 148);
+  filter: blur(5px);
+  
+}
+
+.text-enfase-right::after, .text-enfase-right::before {
+  left: 40%;
+  width: 65%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.caneca-cta {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.f-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-c p {
+  margin-top: 0;
+}
+
+.price-colored {
+  background-image: linear-gradient(to bottom right,rgb(37, 147, 237),rgb(4, 63, 111));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
